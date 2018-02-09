@@ -14,36 +14,36 @@ function compSelect()
 function rpsGame(playerInput, compInput) 
 {
   playerInput = playerInput.toLowerCase();
-  if (playerInput == compInput) {alert('Draw')};
+  if (playerInput == compInput) {$("#res").html("Result: Draw")};
   switch (playerInput) 
   {
     case 'rock':
       switch (compInput)
       {
-        case 'scissors': alert('Rock beats Scissors, You Win')
+        case 'scissors': $("#res").html("Result: Rock beats Scissors, You Win")
           pScore++
           break;
-        case 'paper': alert('Paper beats Rock, You Lose')
+        case 'paper': $("#res").html("Result: Paper beats Rock, You Lose")
           cScore++
           break;
       }
       break;
     case 'scissors': switch (compInput)
     {
-        case 'paper': alert('Scissors beat Paper, You Win')
+        case 'paper': $("#res").html("Result: Scissors beat Paper, You Win")
           pScore++
           break;
-        case 'rock': alert('Rock beats Scissors, You Lose')
+        case 'rock': $("#res").html("Result: Rock beats Scissors, You Lose")
           cScore++
           break;
     }
       break;
     case 'paper': switch (compInput)
     {
-        case 'rock': alert('Paper beats Rock, You Win')
+        case 'rock': $("#res").html("Result: Paper beats Rock, You Win")
           pScore++
           break;
-        case 'scissors': alert('Scissors beat Paper, You Lose')
+        case 'scissors': $("#res").html("Result: Scissors beat Paper, You Lose")
           cScore++
           break;
     }

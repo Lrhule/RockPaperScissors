@@ -1,6 +1,21 @@
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
   grid-gap: 10px;
   margin:100px; 
+}
+#res {
+	grid-column: 1 / span 3;
+
+}
+button {
+	width: 80%;
+}
+h1 {
+	text-align: center;
+}
+
+body {
+	font-family: Roboto ;
 }
